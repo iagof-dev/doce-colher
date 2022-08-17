@@ -1,0 +1,125 @@
+/*  CSS  DA PÁGINA INICIAL    */
+/*  CSS  DA PÁGINA INICIAL    */
+/*  CSS  DA PÁGINA INICIAL    */
+/*  CSS  DA PÁGINA INICIAL    */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+:root{
+    --carrosel-x: 50%;
+    --carrosel-y: 500px;
+    --carrosel-img: 100%;
+
+    --carrosel-min-y: 200px;
+    --carrosel-min-x: 10%;
+
+    --fonte-titulo: Playfair Display, serif;
+    --fonte-button: Roboto Slab, serif;
+    --fonte-desc: Times New Roman, Times, serif;
+}
+
+*{
+    
+    margin: 0;
+}
+body{
+    background-color: #ededed;
+}
+h1{
+    font-family: var(--fonte-titulo);
+}
+.promocao{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+.logo{
+    display: flex;
+}
+.logoimg{
+    display: flexbox;
+    width: 3%;
+    height: 50px;
+}
+.navbar{
+    top: 0;
+    display: flex;
+    position: sticky;
+
+}
+.navitems{
+
+    display: flex;
+    background-color: green;
+    width: 150px;
+    height: 15px;
+}
+.navsolid{
+    background-color: #E82E64;
+    width: 100%;
+    height: 50px;
+}
+
+
+/* =============== Carrossel de Promoções =============== */
+
+.carrosel{
+    
+    display: flex;
+    margin-top: 1%;
+    justify-content: center;
+    align-items: center;
+}
+.carroselobj{
+    min-width: var(--carrosel-min-x);
+    min-height: var(--carrosel-min-y);
+}
+.carroselimg{
+    display: block;
+    border: 1px solid black;
+    border-radius: 15px;
+    min-width: var(--carrosel-min-x);
+    min-height: var(--carrosel-min-y);
+
+    max-width: var(--carrosel-img);
+    max-height: var(--carrosel-y);
+
+}
+
+.carbt_right{
+    margin-left: 2%;
+    
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: var(--fonte-button);
+    padding: 0px 0px 5px 0px;
+    border-radius: 15px;
+    height: 35px;
+    width: 35px;
+}
+.carbt_left{
+    margin-right: 1%;
+
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: var(--fonte-button);
+    padding: 0px 0px 5px 0px;
+    border-radius: 15px;
+    height: 35px;
+    width: 35px;
+    
+}
+.carbt_left:hover{
+
+    background-color: grey;
+    
+}
+.carbt_right:hover{
+
+    background-color: grey;
+    
+}
+/* ============================================= */
