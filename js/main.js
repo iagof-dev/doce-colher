@@ -2,8 +2,9 @@
 
 var imgobj = document.getElementById('carroselimgid');
 
+local = "./img/banners/";
 
-imgobj.src = ("./img/Teste.png")
+imgobj.src = (local + "Teste.png")
 
 window.addEventListener('load', function () {
     var texto = "-----------Projeto Doce Colher-----------\nCriado por N3rdyDzn (github.com/n3rdydzn) \n        Desenvolvido na escola.\n-----------------------------------------";
@@ -24,26 +25,28 @@ window.addEventListener('load', function () {
 
 var i = 0;
 var tdelay = 5000;
+var min_imgs = 1;
+var total_imgs = 5;
 var mudarfoto = setInterval(carrosel, tdelay);
 
 
 
 function carrosel(){
     i++;
-    if (i < 1){
-        i = 2;
+    if (i < min_imgs){
+        i = total_imgs;
     }
-    if(i > 2){
-        i = 1;
+    if(i > total_imgs){
+        i = min_imgs;
     }
     
-    link = ("./img/Teste" + i + ".png");
+    link = (local + "Teste" + i + ".png");
     console.log("Debug: " + link);
     imgobj.src = link;
 
 
 
-    if (i >= 2){
+    if (i >= total_imgs){
         i = 0;
     }
     imgobj.classList.remove('animate__animated','animationend')
@@ -52,18 +55,16 @@ function carrosel(){
 
 function btclickdrt(){
     clearInterval(mudarfoto);
-
     imgobj.classList.add('animate__animated', 'animate__fadeOut');
-    
     i++;
-    if (i < 1){
-        i = 2;
+    if (i < min_imgs){
+        i = total_imgs;
     }
-    if(i > 2){
-        i = 1;
+    if(i > total_imgs){
+        i = min_imgs;
     }
 
-    link = ("./img/Teste" + i + ".png");
+    link = (local + "Teste" + i + ".png");
     console.log("Debug: " + link);
     imgobj.src = link;
     mudarfoto = setInterval(carrosel, tdelay);
@@ -73,14 +74,14 @@ function btclickesq(){
     clearInterval(mudarfoto);
     imgobj.classList.add('animate__animated', 'animate__fadeOut');
     i--;
-    if (i < 1){
-        i = 2;
+    if (i < min_imgs){
+        i = total_imgs;
     }
-    if(i > 2){
-        i = 1;
+    if(i > total_imgs){
+        i = min_imgs;
     }
 
-    link = ("./img/Teste" + i + ".png");
+    link = (local + "Teste" + i + ".png");
     console.log("Debug: " + link);
     imgobj.src = link;
     mudarfoto = setInterval(carrosel, tdelay);
