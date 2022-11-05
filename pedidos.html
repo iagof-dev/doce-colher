@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doce Colher</title>
+  <link href="./css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/typekit.css">
+  <script src="./js/fontawesome.js"></script>
+  <link rel="stylesheet" href="./css/pedidos.css">
+
+  <link rel="shortcut icon" href="./img/logos/5.png" type="image/x-icon">
+</head>
+<script src="./js/card-slider.js"></script>
+<body onload="load();">
+  <header>
+    <nav id="barra" class="navbar navbar-expand-lg bg-primary">
+      <div class="container-fluid">
+        <a href="./index.html"><img src="./img/logos/5.png" width="80" height="80"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navitems">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./historia.html">História</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pedidos.html">Pedidos</a>
+              </li>
+              <li class="nav-item">
+                <div class="carrin"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+              </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- PRODUTOS -->
+  <div class="produtoslist">
+    <div class="productsitens">
+
+      <!-- INICIO DA SECTION DOCES-->
+      <section class="bolos">
+        <h2 class="txtcat">Massas</h2>
+        <div class="center">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="centerv">
+              <button type="button" onclick="docecard(1);" style="font-family: var(--fonte-titulo);text-align: center; font-size: 23px;" class="massapassaresq btn btn-primary"><</button>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="./img/produtos/Bolos/bolovulcão.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bolo Vulcão</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
+                  cumque
+                  animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
+                  hic a at, numquam ullam?</p>
+                <h3 style="color: var(--cor-quitnaria) !important;">R$22,95</h3>
+                <a href="./adicionar.html?id=0" class="btn btn-primary">Adicionar ao Carrinho</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+            <div class="card" style="width: 18rem;">
+              <img src="./img/produtos/Bolos/bolo.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bolo sobre encomenda</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
+                  cumque
+                  animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
+                  hic a at, numquam ullam?</p>
+                <h3 style="color: var(--cor-quitnaria) !important;">R$50,00</h3>
+                <a href="./adicionar.html?id=1" class="btn btn-primary">Adicionar ao Carrinho</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-sm-2">
+            <div class="card" style="width: 18rem;">
+              <img src="./img/produtos/doces/brownie.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Brownie</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
+                  cumque
+                  animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
+                  hic a at, numquam ullam?</p>
+                <h3 style="color: var(--cor-quitnaria) !important;">R$15,00</h3>
+                <a href="./adicionar.html?id=3" class="btn btn-primary">Adicionar ao Carrinho</a>
+              </div>
+            </div>
+          </div>
+          <div class="centerv">
+            <button type="button" onclick="docecard(1);" style="font-family: var(--fonte-titulo);text-align: center; font-size: 23px;" class="massapassardir btn btn-primary">></button>
+          </div>
+          
+
+          <!-- <div class="col-sm-2">
+            <div class="card" style="width: 18rem;">
+              <img src="./img/produtos/doces/copodafelicidade.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Copo da Felicidade</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
+                  cumque
+                  animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
+                  hic a at, numquam ullam?</p>
+                <h3 style="color: var(--cor-quitnaria) !important;">R$20,00</h3>
+                <a href="./adicionar.html?id=2" class="btn btn-primary">Adicionar ao Carrinho</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+            <div class="card" style="width: 18rem;">
+              <img src="./img/produtos/doces/paodemel.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pão de mel</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
+                  cumque
+                  animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
+                  hic a at, numquam ullam?</p>
+                <h3 style="color: var(--cor-quitnaria) !important;">R$6,00</h3>
+                <a href="./adicionar.html?id=7" class="btn btn-primary">Adicionar ao Carrinho</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- FIM da SECTION BOLOS -->
+
+
+      <!-- INICIO DA SECTION DOCES-->
+      <section class="doces">
+        <h2 class="txtcat">Doces</h2>
+        <div class="center">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="centerv">
+              <button type="button" onclick="docecard(1);" style="font-family: var(--fonte-titulo);text-align: center; font-size: 23px;" class="docepassaresq btn btn-primary"><</button>
+            </div>
+            <div id="docecard1" class="card" style="width: 18rem;">
+              <img id="cardimg1" src="./img/placeholder.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 id="cardtitle1" class="card-title">Place Holder</h5>
+                <p id="carddesc1" class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  repudiandae eos
+                  cumque
+                  animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
+                  hic a at, numquam ullam?</p>
+                <h3 id="cardprice1" style="color: var(--cor-quitnaria) !important;">R$0,00</h3>
+                <a id="cardbt1" href="./adicionar.html?id=0" class="btn btn-primary">Adicionar ao Carrinho</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div id="docecard2" class="card" style="width: 18rem;">
+              <img id="card2_img" src="./img/placeholder.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 id="card2_title" class="card-title">Place Holder</h5>
+                <p id="card2_desc" class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  repudiandae eos
+                  cumque
+                  animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
+                  hic a at, numquam ullam?</p>
+                <h3 id="card2_price" style="color: var(--cor-quitnaria) !important;">R$0,00</h3>
+                <a id="card2_bt" href="./adicionar.html?id=0" class="btn btn-primary">Adicionar ao Carrinho</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="centerv">
+              <button type="button" style="font-family: var(--fonte-titulo); font-size: 23px; text-align: center;" onclick="docecard(2);" class="docepassardir btn btn-primary">></button>
+
+            </div>
+            <div id="docecard3" class="card" style="width: 18rem;">
+              <img id="card3_img" src="./img/placeholder.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 id="card3_title" class="card-title">Place Holder</h5>
+                <p id="card3_desc" class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  repudiandae eos
+                  cumque
+                  animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
+                  hic a at, numquam ullam?</p>
+                <h3 id="card3_price" style="color: var(--cor-quitnaria) !important;">R$0,00</h3>
+                <a id="card3_bt" href="./adicionar.html?id=0" class="btn btn-primary">Adicionar ao Carrinho</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+          <!-- <div class="col-sm-2">
+            <div class="card" style="width: 18rem;">
+              <img src="./img/placeholder.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Surpresa de ninho</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
+                  cumque
+                  animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
+                  hic a at, numquam ullam?</p>
+                <h3 style="color: var(--cor-quitnaria) !important;">R$7,00</h3>
+
+                <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+            <div class="card" style="width: 18rem;">
+              <img src="./img/produtos/doces/casquinha.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Casquinha</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
+                  cumque
+                  animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
+                  hic a at, numquam ullam?</p>
+                <h3 style="color: var(--cor-quitnaria) !important;">R$5,00</h3>
+                <a href="./adicionar.html?id=11" class="btn btn-primary">Adicionar ao Carrinho</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-sm-2">
+            <div class="card" style="width: 18rem;">
+              <img src="./img/produtos/doces/pastelnut.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mini Pastel</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
+                  cumque
+                  animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
+                  hic a at, numquam ullam?</p>
+                <h3 style="color: var(--cor-quitnaria) !important;">R$8,95</h3>
+                <a href="./adicionar.html?id=8" class="btn btn-primary">Adicionar ao Carrinho</a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-sm-2">
+            <div class="card" style="width: 18rem;">
+              <img src="./img/produtos/doces/macarons.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Macaron</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
+                  cumque
+                  animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
+                  hic a at, numquam ullam?</p>
+                <h3 style="color: var(--cor-quitnaria) !important;">R$5,00</h3>
+                <a href="./adicionar.html?id=9" class="btn btn-primary">Adicionar ao Carrinho</a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-sm-2">
+            <div class="card" style="width: 18rem;">
+              <img src="./img/produtos/doces/bombom.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bombom</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
+                  cumque
+                  animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
+                  hic a at, numquam ullam?</p>
+                <h3 style="color: var(--cor-quitnaria) !important;">R$7,00</h3>
+                <a href="./adicionar.html?id=10" class="btn btn-primary">Adicionar ao Carrinho</a>
+              </div>
+            </div>
+          </div> -->
+      </section>
+
+      <!-- FIM DA SECTION DOCES -->
+
+      <!-- INICIO DA SECTION cafes-->
+      <section class="bebidasg">
+        <h2 class="txtcat">Cafézes</h2>
+        <div class="row">
+
+
+
+          <div class="col-sm-2">
+            <div class="card" style="width: 18rem;">
+              <img src="./img/produtos/cafezes/cafe.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Café</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
+                  cumque
+                  animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
+                  hic a at, numquam ullam?</p>
+                <h3 style="color: var(--cor-quitnaria) !important;">R$9,50</h3>
+                <a href="./adicionar.html?id=12" class="btn btn-primary">Adicionar ao Carrinho</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+            <div class="card" style="width: 18rem;">
+              <img src="./img/produtos/cafezes/mocha.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mocha</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
+                  cumque
+                  animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
+                  hic a at, numquam ullam?</p>
+                <h3 style="color: var(--cor-quitnaria) !important;">R$15,00</h3>
+                <a href="./adicionar.html?id=13" class="btn btn-primary">Adicionar ao Carrinho</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+            <div class="card" style="width: 18rem;">
+              <img src="./img/produtos/cafezes/capuccino.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Capuccino</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
+                  cumque
+                  animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
+                  hic a at, numquam ullam?</p>
+                <h3 style="color: var(--cor-quitnaria) !important;">R$13,00</h3>
+                <a href="./adicionar.html?id=14" class="btn btn-primary">Adicionar ao Carrinho</a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-sm-2">
+            <div class="card" style="width: 18rem;">
+              <img src="./img/produtos/cafezes/cha.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chá</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
+                  cumque
+                  animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
+                  hic a at, numquam ullam?</p>
+                <h3 style="color: var(--cor-quitnaria) !important;">R$7,20</h3>
+                <a href="./adicionar.html?id=15" class="btn btn-primary">Adicionar ao Carrinho</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+    </section>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- FIM DA SECTION CAFEs -->
+
+
+  <!-- INICIO DA SECTION BEBIDAS-->
+  <section class="bebidas">
+    <h2 class="txtcat">Bebidas</h2>
+    <div class="row">
+
+
+
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img src="./img/produtos/bebidas/agua.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Água</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
+              cumque
+              animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
+              hic a at, numquam ullam?</p>
+            <h3 style="color: var(--cor-quitnaria) !important;">R$2,00</h3>
+            <a href="./adicionar.html?id=16" class="btn btn-primary">Adicionar ao Carrinho</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img src="./img/produtos/bebidas/suco.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Suco Natural</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
+              cumque
+              animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
+              hic a at, numquam ullam?</p>
+            <h3 style="color: var(--cor-quitnaria) !important;">R$7,00</h3>
+            <a href="./adicionar.html?id=17" class="btn btn-primary">Adicionar ao Carrinho</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img src="./img/produtos/bebidas/refrigerante.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Refrigerante</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
+              cumque
+              animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
+              hic a at, numquam ullam?</p>
+            <h3 style="color: var(--cor-quitnaria) !important;">R$7,00</h3>
+            <a href="./adicionar.html?id=18" class="btn btn-primary">Adicionar ao Carrinho</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    </div>
+  </section>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- FIM DA SECTION BEBIDAS -->
+
+
+
+
+
+
+  <!-- FIM DA DIV PRODUTOS -->
+
+
+  <!--   FOOTER/RODAPÉ   -->
+  <footer>
+    <div class="footer">
+
+      <div class="center">
+        <h2 class="rainbow-text">Doce Colher</h2><br>
+      </div>
+      <div class="center">
+        <p style="margin-top: -23px; color: black; font-weight: 500;">Av. do Café, 462-486 - Vila Maria Cristina,
+          Jaú -
+          SP, 17207-150</p>
+      </div>
+      <div class="center">
+        <div class="sociais">
+          <a class="cardfa" href="https://twitter.com/docecolherjau"><i class="fa-brands fa-twitter fa-xl"></i></a>
+          <a class="cardfa" href="https://facebook.com/docecolherjau"><i class="fa-brands fa-facebook fa-xl"></i></a>
+          <a class="cardfa" href="https://youtube.com/c/docecolherjau"><i class="fa-brands fa-youtube fa-xl"></i></a>
+          <a class="cardfa" href="mailto:admin@docecolher.store"><i class="fa-solid fa-envelope fa-xl"></i></a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!--    FIM DO FOOTER    -->
+
+
+</body>
+<script type="text/javascript">
+  (function () {
+    var options = {
+      whatsapp: "+5514998570436", // WhatsApp number
+      call_to_action: "", // Call to action
+      button_color: "#FF6550", // Color of button
+      position: "right", // Position may be 'right' or 'left'
+    };
+    var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+    s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+    var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+  })();
+</script>
+
+</html>

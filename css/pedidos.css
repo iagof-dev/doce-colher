@@ -1,0 +1,89 @@
+.docepassaresq{
+    border: none;
+    width: 42px;
+    height: 40px;
+    position: absolute;
+    left: 20%;
+    top: 1090px;
+
+    border-radius: 25px;
+    font-weight: bold;
+    color: white !important;
+}
+
+.docepassardir{
+    border: none;
+    width: 42px;
+    font-weight: bold;
+    color: white !important;
+    height: 40px;
+    position: absolute;
+    top: 1090px;
+    right: 20%;
+    border-radius: 25px;
+}
+
+.massapassardir{
+    border: none;
+    width: 42px;
+    font-weight: bold;
+    color: white !important;
+    height: 40px;
+    position: absolute;
+    top: 500px;
+    right: 20%;
+    border-radius: 25px;
+}
+
+.massapassaresq{
+    border: none;
+    width: 42px;
+    height: 40px;
+    position: absolute;
+    left: 20%;
+    top: 500px;
+
+    border-radius: 25px;
+    font-weight: bold;
+    color: white !important;
+}
+
+
+
+
+
+
+.doces{
+    width: 100% !important;
+    height: auto !important;
+}
+
+.center{
+    width: 100% !important;
+
+}
+
+.produtoslist{
+    width: 100%;
+    padding: 2%;
+    display: flex;
+}
+
+.txtcat{
+    margin-top: 2%;
+    justify-content: center;
+    text-align: center;
+}
+.card{
+    border-radius: 20px;
+}
+.card-img-top{
+    border-radius: 10px 10px 0px  0px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.productsitens{
+    width: 100%;
+}

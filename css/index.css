@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coustard&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+*{
+    margin: 0;
+    --cor-primaria: #DA8F8C;
+    --cor-secundaria: #F3C2C6;
+    --cor-terciaria: #FFE0E5;
+    --cor-quartiaria: #4993CF;
+    --cor-quitnaria: #E82E64;
+    --cor-dorada: #E9C866;
+    --cor-lilais: #DDCDF4;
+    --cor-verde: #bcf8c9;
+
+    --fonte-titulo: 'Sacramento', cursive;
+    --fonte-desc: 'Times New Roman', Times, serif; 
+    --fonte-alt: 'Cookie', cursive;
+    
+}
+body{
+    background-color: #F8F8FF;
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    
+}
+.btn,btn-primary{
+    color: white !important;
+    background-color: var(--cor-quitnaria) !important;
+    border-style: none !important;
+    border: 0px !important;
+
+}
+
+.box{
+    display: flex;
+    width: 437px;
+    background-color: var(--cor-lilais);
+    justify-content: center;
+
+}
+.promotitle{
+    padding-bottom: 40px;
+
+}
+
+.bruh{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+
+h1{
+    font-family: var(--fonte-alt);
+    font-size: 98px !important;
+    padding: 3px;
+    padding-top: 1px;
+}
+.carrin{
+    margin-top:8px;
+    color: black !important;
+    filter: brightness(0%);
+}
+.carrin:hover{
+    margin-top:8px;
+    filter: brightness(200%);
+}
+.navitems{
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+}
+.nav-link{
+    color: black !important; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    border-radius: 20px;
+}
+.nav-link:hover{
+    color: rgb(247, 247, 247) !important; 
+    border-radius: 20px;
+    text-decoration: underline;
+}
+
+h2{
+    font-weight: bold;
+}
+.imagem{
+    width: 50%;
+    height: 50%;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.footer{
+    display: flexbox;
+    width: 100%;
+    height: auto;
+}
+footer{
+    display: flex;
+    background-color: var(--cor-lilais  );
+    position:absolute;
+    margin-top: 8%;
+    width: 100%;
+    height: auto;
+}
+#barra{
+    background-color: var(--cor-lilais) !important;
+}
+a{
+    color:var(--cor-verde) !important;
+}
+li{
+    color: black !important;
+
+}
+
+.sbsi7l-0,evMtho{
+    display:none!important;
+
+}
+
+#promocao{
+    margin-top: 3%;
+    font-size: 512px !important;
+}
+
+/* BARRA DO LADO */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(82, 82, 82);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #F3C2C6;
+}
+
+.gmaps{
+    display: flex;
+    width: 200px;
+    height: 150px;
+}
+
+.rainbow-text {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.sociais{
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+.cardfa{
+    color: black !important;
+}
+.cardfa:hover{
+    color: rgb(247, 247, 247) !important; 
+
+}
+
+.container{
+    margin-top: -50px;
+}
