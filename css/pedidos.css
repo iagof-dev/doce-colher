@@ -4,7 +4,7 @@
     height: 40px;
     position: absolute;
     left: 20%;
-    top: 1090px;
+    top: 1250px;
 
     border-radius: 25px;
     font-weight: bold;
@@ -18,10 +18,38 @@
     color: white !important;
     height: 40px;
     position: absolute;
-    top: 1090px;
+    top: 1250px;
     right: 20%;
     border-radius: 25px;
 }
+
+
+.cafepassaresq{
+    border: none;
+    width: 42px;
+    height: 40px;
+    position: absolute;
+    left: 20%;
+    top: 2020px;
+
+    border-radius: 25px;
+    font-weight: bold;
+    color: white !important;
+}
+
+.cafepassardir{
+    border: none;
+    width: 42px;
+    font-weight: bold;
+    color: white !important;
+    height: 40px;
+    position: absolute;
+    top: 2020px;
+    right: 20%;
+    border-radius: 25px;
+}
+
+
 
 .massapassardir{
     border: none;
@@ -47,8 +75,6 @@
     font-weight: bold;
     color: white !important;
 }
-
-
 
 
 

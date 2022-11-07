@@ -5,6 +5,8 @@
 
 *{
     margin: 0;
+    padding: 0;
+
     --cor-primaria: #DA8F8C;
     --cor-secundaria: #F3C2C6;
     --cor-terciaria: #FFE0E5;
@@ -20,6 +22,8 @@
     
 }
 body{
+    max-width: 100%;
+    overflow-x: hidden;
     background-color: #F8F8FF;
     margin: 0;
     padding: 0;
@@ -29,6 +33,10 @@ body{
     -o-user-select: none;
     user-select: none;
     
+}
+
+.fa-solid{
+    padding-right: 5px;
 }
 .btn,btn-primary{
     color: white !important;
@@ -68,10 +76,14 @@ h1{
     margin-top:8px;
     color: black !important;
     filter: brightness(0%);
+    border-radius: 12px;
 }
 .carrin:hover{
     margin-top:8px;
+    
     filter: brightness(200%);
+
+
 }
 .navitems{
     align-items: center;

@@ -1,6 +1,18 @@
 const imagemobj = document.getElementById("img");
 const tituloobj = document.getElementById("title");
+
+
 const preco = document.getElementById('price');
+const radio1 = document.getElementById('op1');
+const radio2 = document.getElementById('op2');
+const radio3 = document.getElementById('op3');
+const radio4 = document.getElementById('op4');
+
+const radio1txt = document.getElementById('op1txt');
+const radio2txt = document.getElementById('op2txt');
+const radio3txt = document.getElementById('op3txt');
+const radio4txt = document.getElementById('op4txt');
+
 
 document.addEventListener('DOMContentLoaded', function carregar() {
 
@@ -11,6 +23,18 @@ document.addEventListener('DOMContentLoaded', function carregar() {
             imagemobj.src = "../img/produtos/Bolos/bolovulcão.webp";
             tituloobj.innerText = "Bolo Vulcão";
             preco.innerText = "R$22,95";
+            radio1txt.innerText = "Nutella";
+            radio1.style.display = "flex";
+            
+            radio2txt.innerText = "Ninho";
+            radio2.style.display = "flex";
+
+            radio3txt.innerText = "Brigadeiro";
+            radio3.style.display = "flex";
+
+            radio4txt.innerText = "Morango";
+            radio4.style.display = "flex";
+
             break;
         case '1':
             imagemobj.src = "../img/produtos/Bolos/bolo.webp";
@@ -71,21 +95,44 @@ document.addEventListener('DOMContentLoaded', function carregar() {
             imagemobj.src = "../img/produtos/cafezes/cafe.webp";
             tituloobj.innerText = "Café";
             preco.innerText = "R$9,50";
+            radio1txt.innerText = "Com Açúcar";
+            radio1.style.display = "flex";
+            
+            radio2txt.innerText = "Sem Açúcar";
+            radio2.style.display = "flex";
             break;
         case '13':
             imagemobj.src = "../img/produtos/cafezes/mocha.webp";
             tituloobj.innerText = "Mocha";
             preco.innerText = "R$15,00";
+            radio1txt.innerText = "Com Açúcar";
+            radio1.style.display = "flex";
+            
+            radio2txt.innerText = "Sem Açúcar";
+            radio2.style.display = "flex";
             break;
         case '14':
             imagemobj.src = "../img/produtos/cafezes/capuccino.webp";
             tituloobj.innerText = "Cappuccino";
+            radio1txt.innerText = "Com Açúcar";
+            radio1.style.display = "flex";
+            
+            radio2txt.innerText = "Sem Açúcar";
+            radio2.style.display = "flex";
             preco.innerText = "R$13,00";
             break;
         case '15':
             imagemobj.src = "../img/produtos/cafezes/cha.webp";
             tituloobj.innerText = "chá";
             preco.innerText = "R$7,20";
+
+            radio1txt.innerText = "Com Açúcar";
+            radio1.style.display = "flex";
+            radio1.checked = true;
+            
+            radio2txt.innerText = "Sem Açúcar";
+            radio2.style.display = "flex";
+
             break;
         case '16':
             imagemobj.src = "../img/produtos/bebidas/agua.webp";
@@ -108,7 +155,41 @@ document.addEventListener('DOMContentLoaded', function carregar() {
             tituloobj.innerText = "Surpresa de Ninho";
             preco.innerText = "R$7,00";
             break;
+        case '20':
+            imagemobj.src = "../img/produtos/cafezes/frappuccino.webp";
+            tituloobj.innerText = "Frappuccino";
+            preco.innerText = "R$12,00";
 
+            radio1txt.innerText = "Com Açúcar";
+            radio1.style.display = "flex";
+            
+            radio2txt.innerText = "Sem Açúcar";
+            radio2.style.display = "flex";
+            
+            break;
+        case '21':
+            imagemobj.src = "../img/produtos/cafezes/MACCHIATO.webp";
+            tituloobj.innerText = "Macchiato";
+            preco.innerText = "R$10,00";
+
+            radio1txt.innerText = "Com Açúcar";
+            radio1.style.display = "flex";
+            
+            radio2txt.innerText = "Sem Açúcar";
+            radio2.style.display = "flex";
+
+            break;
+        case '22':
+            imagemobj.src = "../img/produtos/cafezes/leite.webp";
+            tituloobj.innerText = "Café Au Lait";
+            preco.innerText = "R$15,00";
+
+            radio1txt.innerText = "Com Açúcar";
+            radio1.style.display = "flex";
+            
+            radio2txt.innerText = "Sem Açúcar";
+            radio2.style.display = "flex";
+            break;
     }
 });
 

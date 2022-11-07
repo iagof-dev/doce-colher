@@ -28,36 +28,40 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             <div class="addp">
                 <div class="itens">
                 <button class="voltar" onclick="history.back();">X</button>
-
-                    <img width="70%" height="40%" id="img"
-                        src="./img/placeholder.webp"></img>
-                    <h1 id="title">Produto</h1>
+                    <img width="70%" height="40%" id="img" src="./img/placeholder.webp" />
+                    <h1 id="title">Card</h1>
                     <h2 id="price">R$0,00</h2>
 
                     <div class="center">
-                        
+                        <form>
                         <div class="radio">
-                            <div class="options">
-                                <input type="checkbox">
-                                <p>Opção 1 </p></input><br>
+                            <div style="display: none;" id="op1" class="options">
+                                <input required id="op1" type="radio" name="opcao">
+                                <p id="op1txt">Opção 1 </p></input><br>
                             </div>
-                            <div class="options">
-                                <input type="checkbox">
-                                <p>Opção 2 </p></input><br>
+
+                            <div style="display: none;" id="op2" class="options">
+                                <input required id="op2" class="radiobt" type="radio" name="opcao">
+                                <p id="op2txt">Opção 2 </p></input><br>
                             </div>
-                            <div class="options">
-                                <input type="checkbox">
-                                <p>Opção 3 </p></input><br>
+
+                            <div style="display: none;" id="op3" class="options">
+                                <input required id="op3" class="radiobt" type="radio" name="opcao">
+                                <p id="op3txt">Opção 3 </p></input><br>
                             </div>
-                            <div class="options">
-                                <input type="checkbox">
-                                <p>Opção 4 </p></input><br>
+
+                            <div style="display: none;" id="op4"  class="options">
+                                <input required id="op4"  class="radiobt" type="radio" name="opcao">
+                                <p id="op4txt">Opção 4 </p></input><br>
                             </div>
+                            
                         </div><br>
-                        <div class="comprar">
                             <button id="addbt" class="btn">Adicionar</button>
-                        </div>
+                    </form>
+                        
+                        
                     </div>
+                
 
                     
                 </div>

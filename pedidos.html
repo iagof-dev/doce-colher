@@ -10,10 +10,13 @@
   <link rel="stylesheet" href="./css/typekit.css">
   <script src="./js/fontawesome.js"></script>
   <link rel="stylesheet" href="./css/pedidos.css">
-
+  <script src="./js/card-slider.js"></script>
   <link rel="shortcut icon" href="./img/logos/5.png" type="image/x-icon">
 </head>
-<script src="./js/card-slider.js"></script>
+
+
+
+
 <body onload="load();">
   <header>
     <nav id="barra" class="navbar navbar-expand-lg bg-primary">
@@ -27,16 +30,17 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Início</a>
+
+                <a class="nav-link active" aria-current="page" href="./index.html"> <i class="fa-sharp fa-solid fa-house"></i>Início</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./historia.html">História</a>
+                <a class="nav-link" href="./historia.html"><i class="fa-solid fa-book"></i>História</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pedidos.html">Pedidos</a>
+                <a class="nav-link" href="./pedidos.html"><i class="fa-solid fa-clipboard"></i>Pedidos</a>
               </li>
               <li class="nav-item">
-                <div class="carrin"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+                <div class="carrin"><a href="./carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
               </li>
           </div>
         </div>
@@ -51,38 +55,40 @@
 
       <!-- INICIO DA SECTION DOCES-->
       <section class="bolos">
-        <h2 class="txtcat">Massas</h2>
+        <div class="center">
+          <img src="./img/titulos/MASSAS.webp" style="margin-top: -100px;margin-bottom: -100px;" width="40%" height="300px" />
+        </div>
         <div class="center">
         <div class="row">
           <div class="col-sm-2">
             <div class="centerv">
-              <button type="button" onclick="docecard(1);" style="font-family: var(--fonte-titulo);text-align: center; font-size: 23px;" class="massapassaresq btn btn-primary"><</button>
+              <button type="button" onclick="massacard(1);" style="font-family: var(--fonte-titulo);text-align: center; font-size: 21px;" class="massapassaresq btn btn-primary"><i class="fa-solid fa-arrow-left" style="margin-top: 4px;"></i></button>
             </div>
             <div class="card" style="width: 18rem;">
-              <img src="./img/produtos/Bolos/bolovulcão.webp" class="card-img-top" alt="...">
+              <img id="massacardimg1" src="./img/placeholder.webp" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Bolo Vulcão</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
+                <h5 id="massacardtitle1" class="card-title">Card #1</h5>
+                <p id="massacarddesc1" class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
                   cumque
                   animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
                   hic a at, numquam ullam?</p>
-                <h3 style="color: var(--cor-quitnaria) !important;">R$22,95</h3>
-                <a href="./adicionar.html?id=0" class="btn btn-primary">Adicionar ao Carrinho</a>
+                <h3 id="massacardprice1"  style="color: var(--cor-quitnaria) !important;">R$0,00</h3>
+                <a id="massacardbt1" href="./adicionar.html?id=0" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Adicionar ao Carrinho</a>
               </div>
             </div>
           </div>
 
           <div class="col-sm-2">
             <div class="card" style="width: 18rem;">
-              <img src="./img/produtos/Bolos/bolo.webp" class="card-img-top" alt="...">
+              <img id="massacard2_img" src="./img/placeholder.webp" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Bolo sobre encomenda</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
+                <h5 id="massacard2_title" class="card-title">Card #2</h5>
+                <p id="massacard2_desc" class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
                   cumque
                   animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
                   hic a at, numquam ullam?</p>
-                <h3 style="color: var(--cor-quitnaria) !important;">R$50,00</h3>
-                <a href="./adicionar.html?id=1" class="btn btn-primary">Adicionar ao Carrinho</a>
+                <h3 id="massacard2_price" style="color: var(--cor-quitnaria) !important;">R$0,00</h3>
+                <a id="massacard2_bt" href="./adicionar.html?id=0" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Adicionar ao Carrinho</a>
               </div>
             </div>
           </div>
@@ -90,22 +96,22 @@
 
           <div class="col-sm-2">
             <div class="card" style="width: 18rem;">
-              <img src="./img/produtos/doces/brownie.webp" class="card-img-top" alt="...">
+              <img id="massacard3_img" src="./img/placeholder.webp" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Brownie</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
+                <h5 id="massacard3_title" class="card-title">Card #3</h5>
+                <p id="massacard3_desc" class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
                   cumque
                   animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
                   hic a at, numquam ullam?</p>
-                <h3 style="color: var(--cor-quitnaria) !important;">R$15,00</h3>
-                <a href="./adicionar.html?id=3" class="btn btn-primary">Adicionar ao Carrinho</a>
+                <h3 id="massacard3_price" style="color: var(--cor-quitnaria) !important;">R$0,00</h3>
+                <a id="massacard3_bt" href="./adicionar.html?id=0" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Adicionar ao Carrinho</a>
               </div>
             </div>
           </div>
           <div class="centerv">
-            <button type="button" onclick="docecard(1);" style="font-family: var(--fonte-titulo);text-align: center; font-size: 23px;" class="massapassardir btn btn-primary">></button>
+            <button type="button" onclick="massacard(2);" style="font-family: var(--fonte-titulo);text-align: center; font-size: 23px;" class="massapassardir btn btn-primary"><i class="fa-solid fa-arrow-right" style="margin-top: 4px;"></i></button>
           </div>
-          
+
 
           <!-- <div class="col-sm-2">
             <div class="card" style="width: 18rem;">
@@ -143,12 +149,15 @@
 
       <!-- INICIO DA SECTION DOCES-->
       <section class="doces">
-        <h2 class="txtcat">Doces</h2>
+        <div class="center">
+          <img src="./img/titulos/dOCES.webp" style="margin-top: -20px;margin-bottom: -100px;" width="40%" height="300px" />
+        </div>
+
         <div class="center">
         <div class="row">
           <div class="col-sm-4">
             <div class="centerv">
-              <button type="button" onclick="docecard(1);" style="font-family: var(--fonte-titulo);text-align: center; font-size: 23px;" class="docepassaresq btn btn-primary"><</button>
+              <button type="button" onclick="docecard(1);" style="font-family: var(--fonte-titulo);text-align: center; font-size: 23px;" class="docepassaresq btn btn-primary"><i class="fa-solid fa-arrow-left" style="margin-top: 3px;"></i></button>
             </div>
             <div id="docecard1" class="card" style="width: 18rem;">
               <img id="cardimg1" src="./img/placeholder.webp" class="card-img-top" alt="...">
@@ -160,7 +169,7 @@
                   animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
                   hic a at, numquam ullam?</p>
                 <h3 id="cardprice1" style="color: var(--cor-quitnaria) !important;">R$0,00</h3>
-                <a id="cardbt1" href="./adicionar.html?id=0" class="btn btn-primary">Adicionar ao Carrinho</a>
+                <a id="cardbt1" href="./adicionar.html?id=0" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Adicionar ao Carrinho</a>
               </div>
             </div>
           </div>
@@ -175,14 +184,13 @@
                   animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
                   hic a at, numquam ullam?</p>
                 <h3 id="card2_price" style="color: var(--cor-quitnaria) !important;">R$0,00</h3>
-                <a id="card2_bt" href="./adicionar.html?id=0" class="btn btn-primary">Adicionar ao Carrinho</a>
+                <a id="card2_bt" href="./adicionar.html?id=0" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Adicionar ao Carrinho</a>
               </div>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="centerv">
-              <button type="button" style="font-family: var(--fonte-titulo); font-size: 23px; text-align: center;" onclick="docecard(2);" class="docepassardir btn btn-primary">></button>
-
+              <button type="button" style="font-family: var(--fonte-titulo); font-size: 23px; text-align: center;" onclick="docecard(2);" class="docepassardir btn btn-primary"><i class="fa-solid fa-arrow-right" style="margin-top: 3px;"></i></button>
             </div>
             <div id="docecard3" class="card" style="width: 18rem;">
               <img id="card3_img" src="./img/placeholder.webp" class="card-img-top" alt="...">
@@ -194,7 +202,7 @@
                   animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
                   hic a at, numquam ullam?</p>
                 <h3 id="card3_price" style="color: var(--cor-quitnaria) !important;">R$0,00</h3>
-                <a id="card3_bt" href="./adicionar.html?id=0" class="btn btn-primary">Adicionar ao Carrinho</a>
+                <a id="card3_bt" href="./adicionar.html?id=0" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Adicionar ao Carrinho</a>
               </div>
             </div>
           </div>
@@ -287,58 +295,67 @@
 
       <!-- INICIO DA SECTION cafes-->
       <section class="bebidasg">
-        <h2 class="txtcat">Cafézes</h2>
+        <div class="center">
+          <img src="./img/titulos/cafe.webp"  style="margin-top: -20px;margin-bottom: -70px;" width="40%" height="300px" />
+        </div>
+
         <div class="row">
 
-
-
           <div class="col-sm-2">
-            <div class="card" style="width: 18rem;">
-              <img src="./img/produtos/cafezes/cafe.webp" class="card-img-top" alt="...">
+
+            <div class="centerv">
+              <button type="button" onclick="cafecard(1);" style="font-family: var(--fonte-titulo);text-align: center; font-size: 23px;" class="cafepassaresq btn btn-primary"><i class="fa-solid fa-arrow-left" style="margin-top: 3px;"></i></button>
+            </div>
+            
+            <div id="cafecard1obj" class="card" style="width: 18rem;">
+              <img id="cafecard1img" src="./img/placeholder.webp" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Café</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
+                <h5 id="cafecard1tit" class="card-title">Card</h5>
+                <p id="cafecard1desc"  class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
                   cumque
                   animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
                   hic a at, numquam ullam?</p>
-                <h3 style="color: var(--cor-quitnaria) !important;">R$9,50</h3>
-                <a href="./adicionar.html?id=12" class="btn btn-primary">Adicionar ao Carrinho</a>
+                <h3 id="cafecard1price" style="color: var(--cor-quitnaria) !important;">R$0,00</h3>
+                <a id="cafecard1bt" href="./adicionar.html?id=0" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Adicionar ao Carrinho</a>
               </div>
             </div>
           </div>
 
           <div class="col-sm-2">
-            <div class="card" style="width: 18rem;">
-              <img src="./img/produtos/cafezes/mocha.webp" class="card-img-top" alt="...">
+            <div id="cafecard2obj" class="card" style="width: 18rem;">
+              <img id="cafecard2img" src="./img/placeholder.webp" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Mocha</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
+                <h5 id="cafecard2tit" class="card-title">Card</h5>
+                <p id="cafecard2desc" class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
                   cumque
                   animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
                   hic a at, numquam ullam?</p>
-                <h3 style="color: var(--cor-quitnaria) !important;">R$15,00</h3>
-                <a href="./adicionar.html?id=13" class="btn btn-primary">Adicionar ao Carrinho</a>
+                <h3 id="cafecard2price" style="color: var(--cor-quitnaria) !important;">R$0,00</h3>
+                <a id="cafecard2bt" href="./adicionar.html?id=0" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Adicionar ao Carrinho</a>
               </div>
             </div>
           </div>
 
           <div class="col-sm-2">
-            <div class="card" style="width: 18rem;">
-              <img src="./img/produtos/cafezes/capuccino.webp" class="card-img-top" alt="...">
+            <div id="cafecard3obj" class="card" style="width: 18rem;">
+              <img id="cafecard3img" src="./img/placeholder.webp" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Capuccino</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
+                <h5 id="cafecard3tit" class="card-title">Card</h5>
+                <p id="cafecard3desc" class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repudiandae eos
                   cumque
                   animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
                   hic a at, numquam ullam?</p>
-                <h3 style="color: var(--cor-quitnaria) !important;">R$13,00</h3>
-                <a href="./adicionar.html?id=14" class="btn btn-primary">Adicionar ao Carrinho</a>
+                <h3 id="cafecard3price" style="color: var(--cor-quitnaria) !important;">R$0,00</h3>
+                <a id="cafecard3bt" href="./adicionar.html?id=14" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Adicionar ao Carrinho</a>
               </div>
+              
             </div>
           </div>
 
-
-
+          <div class="centerv">
+            <button type="button" style="font-family: var(--fonte-titulo); font-size: 23px; text-align: center;" onclick="cafecard(2);" class="cafepassardir btn btn-primary"><i class="fa-solid fa-arrow-right" style="margin-top: 3px;"></i></button>
+          </div>
+<!--
           <div class="col-sm-2">
             <div class="card" style="width: 18rem;">
               <img src="./img/produtos/cafezes/cha.webp" class="card-img-top" alt="...">
@@ -349,10 +366,10 @@
                   animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
                   hic a at, numquam ullam?</p>
                 <h3 style="color: var(--cor-quitnaria) !important;">R$7,20</h3>
-                <a href="./adicionar.html?id=15" class="btn btn-primary">Adicionar ao Carrinho</a>
+                <a href="./adicionar.html?id=15" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Adicionar ao Carrinho</a>
               </div>
             </div>
-          </div>
+          </div> -->
 
         </div>
     </div>
@@ -368,12 +385,13 @@
 
   <!-- INICIO DA SECTION BEBIDAS-->
   <section class="bebidas">
-    <h2 class="txtcat">Bebidas</h2>
+    <div class="center">
+      <img src="./img/titulos/bebidas.webp"  style="margin-top: -20px;margin-bottom: -70px;" width="40%" height="300px" />
+    </div>
+
     <div class="row">
-
-
-
       <div class="col-sm-2">
+
         <div class="card" style="width: 18rem;">
           <img src="./img/produtos/bebidas/agua.webp" class="card-img-top" alt="...">
           <div class="card-body">
@@ -383,7 +401,7 @@
               animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
               hic a at, numquam ullam?</p>
             <h3 style="color: var(--cor-quitnaria) !important;">R$2,00</h3>
-            <a href="./adicionar.html?id=16" class="btn btn-primary">Adicionar ao Carrinho</a>
+            <a href="./adicionar.html?id=16" style="margin-left: 0%;" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Adicionar ao Carrinho</a>
           </div>
         </div>
       </div>
@@ -398,7 +416,7 @@
               animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
               hic a at, numquam ullam?</p>
             <h3 style="color: var(--cor-quitnaria) !important;">R$7,00</h3>
-            <a href="./adicionar.html?id=17" class="btn btn-primary">Adicionar ao Carrinho</a>
+            <a href="./adicionar.html?id=17" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Adicionar ao Carrinho</a>
           </div>
         </div>
       </div>
@@ -413,7 +431,7 @@
               animi ex laborum quae consequuntur ratione eveniet alias quibusdam deserunt praesentium accusamus quia
               hic a at, numquam ullam?</p>
             <h3 style="color: var(--cor-quitnaria) !important;">R$7,00</h3>
-            <a href="./adicionar.html?id=18" class="btn btn-primary">Adicionar ao Carrinho</a>
+            <a href="./adicionar.html?id=18" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Adicionar ao Carrinho</a>
           </div>
         </div>
       </div>
