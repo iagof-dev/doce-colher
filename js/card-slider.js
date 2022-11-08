@@ -73,18 +73,18 @@ function load() {
 
 
 
-    card1_img.src = ("../img/produtos/doces/assopro.webp");
+    card1_img.src = ("./img/produtos/doces/assopro.webp");
     card1_title.innerText = 'Suspiro';
     card1_price.innerText = 'R$7,00';
-    card1_bt.href = "../adicionar.html?id=4";
-    card2_img.src = ("../img/produtos/doces/trufa.webp");
+    card1_bt.href = "./adicionar.html?id=4";
+    card2_img.src = ("./img/produtos/doces/trufa.webp");
     card2_title.innerText = "Trufa";
     card2_price.innerText = "R$6,50";
-    card2_bt.href = "../adicionar.html?id=5";
-    card3_img.src = ("../img/produtos/doces/brigadeiro.webp");
+    card2_bt.href = "./adicionar.html?id=5";
+    card3_img.src = ("./img/produtos/doces/brigadeiro.webp");
     card3_title.innerText = "Brigadeiro";
     card3_price.innerText = "R$7,00";
-    card3_bt.href = "../adicionar.html?id=6";
+    card3_bt.href = "./adicionar.html?id=6";
 
 
     card4_img.src = ("../img/produtos/Bolos/bolovulcão.webp");
