@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    --cor-primaria: #DA8F8C;
+    --cor-secundaria: #F3C2C6;
+    --cor-terciaria: #FFE0E5;
+    --cor-quartiaria: #4993CF;
+    --cor-quitnaria: #E82E64;
+    --cor-dorada: #E9C866;
+    --cor-lilais: #ccccff;
+    --cor-verde: #bcf8c9;
+
+    --fonte-titulo: 'Sacramento', cursive;
+    --fonte-desc: 'Times New Roman', Times, serif; 
+    --fonte-alt: 'Cookie', cursive;
+
+    
+}
+
+.box{
+    display: flex;
+    width: fit-content;
+    height: 760px;
+    padding-top: 5%;
+    background-color: #ffffff;
+    padding: 1rem;
+    margin: auto;
+    border-radius: 30px;
+}
+
+body{
+    background-color: #F8F8FF;
+
+}
+
+#pagamento{
+    padding-top: 2% ;
+}
+
+.verdinho{
+    background-color: #197719 !important;
+}
+
+.confbt{
+    position: absolute;
+    width: 50%;
+    left: 72%;
+    top: 76%;
+}
+p{
+    font-size: 20px;
+}
+h3{
+   font-size: 20px; 
+   text-align: center;
+}
+
+div.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+input[type='radio'] {
+    margin-right: 5px;
+}
+
+span {
+    display: flex;
+    margin-right: 1rem;
+    width: fit-content !important;
+}
+
+.pix{
+    display: none;
+    width: 100%;
+    height: auto;
+    padding-top: 3%;
+}
+.pix2{
+    display: flex;
+    width: 100%;
+
+    justify-content: center;
+}
+
+fieldset {
+    border: inherit;
+}
+.name{
+ font-size: 20px !important;
+}

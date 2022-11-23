@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<h!DOCTYPE html>
+<tml lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doce Colher</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/carrinho.css">
     <link href="./css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/typekit.css">
     <link rel="shortcut icon" href="./img/logos/5.png" type="image/x-icon">
@@ -15,35 +16,68 @@
 </head>
 
 <body>
-    <header>
-        <nav id="barra" class="navbar navbar-expand-lg bg-primary">
-          <div class="container-fluid">
-            <a href="./index.html"><img src="./img/logos/5.png" width="80" height="80"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navitems">
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-    
-                    <a class="nav-link active" aria-current="page" href="./index.html"> <i class="fa-sharp fa-solid fa-house"></i>Início</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./historia.html"><i class="fa-solid fa-book"></i>História</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pedidos.html"><i class="fa-solid fa-clipboard"></i>Produtos</a>
-                  </li>
-                  <li class="nav-item">
-                    <div class="carrin"><a href="./carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
-                  </li>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </header>
+<!--  Header  -->
+<header>
+  <nav id="barra" class="navbar navbar-expand-lg bg-primary">
+    <div class="container-fluid">
+      <a href="./index.html"><img src="./img/logos/5.png" width="80" height="80"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navitems">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              
+              <a class="nav-link active" aria-current="page" href="./index.html"> <i class="fa-sharp fa-solid fa-house"></i>Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./historia.html"><i class="fa-solid fa-book"></i>História</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pedidos.html"><i class="fa-solid fa-clipboard"></i>Pedidos</a>
+            </li>
+            <li class="nav-item">
+              <div class="carrin"><a href="./carrinho.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
+            </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<!--  Fim Header  -->
+
+
+<div class="container2">
+  <div class="box2">
+    <div class="center">
+      <div class="space">
+        <div class="center">
+          <h2>Carrinho</h2>
+        </div>
+
+          <br>
+          <div class="cartproduct center">
+            <img style="border-radius: 10px;" width="20%" src="./img/produtos/bolos/bolo.webp" />
+            <p style="padding: 3%;">Bolo sob Encomenda</p>
+            <p style="margin-top: 25px; font-size: 20px;">R$50,50</p>
+            <p style="margin-top: 26px; padding-left: 25px;">Quantidade: 1</p>
+
+
+          <br>
+        </div>
+        <div class="finalizar">
+          <a href="./pagamento.html"><button class="btn">Finalizar Compra</button></a>
+        </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+
+
+
 
 
   <!--   FOOTER/RODAPÉ   -->

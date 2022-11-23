@@ -1,0 +1,17 @@
+.space{
+    background-color: rgb(231, 231, 231);
+    width: 50%;
+    height: 650px;
+}
+
+.cartproduct{
+    margin-top: 10%;
+    display: flex;
+    color: black;
+}
+
+.finalizar{
+    display: flex;
+    margin-left: 80%;
+    margin-top: 20%;
+}
